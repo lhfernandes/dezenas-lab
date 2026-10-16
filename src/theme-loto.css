@@ -1,0 +1,62 @@
+/* Applied only while Loto Fácil is selected; Mega Sena keeps its green palette. */
+:root[data-game="loto"] {
+  --loto-primary: #930989;
+  --loto-heading: #60105b;
+  --loto-text: #482b44;
+  --loto-muted: #786374;
+  --loto-border: #e8dce5;
+  --loto-soft: #f5e9f3;
+  --loto-dark: #590653;
+  color: var(--loto-text);
+  background: #faf6fa;
+}
+:root[data-game="loto"] :is(aside, header, .card, .metrics article, input, select, .secondary, .local-badge, th, td, .pair-list > div, .chart-caption, .sidebar-bottom) {
+  border-color: var(--loto-border);
+}
+:root[data-game="loto"] :is(.brand, h1, h2, .pair-list strong) { color: var(--loto-heading); }
+:root[data-game="loto"] :is(.brand-mark, .game-selector, .nav-item.active, .source-strip, .upload-icon, .audit-summary, .formula, .insight, #notice) {
+  background: var(--loto-soft);
+  color: var(--loto-heading);
+  border-color: var(--loto-border);
+}
+:root[data-game="loto"] :is(.brand-dot, .privacy-icon, .text-button, .mini-icon, .insight > span) { color: var(--loto-primary); }
+:root[data-game="loto"] .primary { background: var(--loto-primary); color: #fff; box-shadow: 0 3px 4px #93098916; }
+:root[data-game="loto"] :is(.secondary, input, select) { color: var(--loto-text); }
+:root[data-game="loto"] input[type="checkbox"] { accent-color: var(--loto-primary); }
+:root[data-game="loto"] :is(button, a, input, select):focus-visible,
+:root[data-game="loto"] .file-label:focus-within { outline-color: #b32aa6; }
+/* Low specificity keeps muted labels from overriding white button text. */
+:root[data-game="loto"] :where(p, label, .nav-item, .workspace-label, .sidebar-bottom, .sidebar-bottom strong, header, header strong, .local-badge, .eyebrow, .metrics article > span, .metrics small, .section-heading p, .legend, .chart-caption, .bar-row, .bar-row strong, .pair-list > div > span:last-child, .pair-list small, .rank, .sum-chart > div, .insight p, .insight strong, footer, caption, #simulation-status, .game-selector small) {
+  color: var(--loto-muted);
+}
+:root[data-game="loto"] .nav-item.active { color: var(--loto-primary); }
+:root[data-game="loto"] :is(.local-badge i, .status-dot) { background: var(--loto-primary); }
+:root[data-game="loto"] .slash { color: #b49aaf; }
+:root[data-game="loto"] :is(.tag, .metrics em) { background: #efdaeb; color: #7b2173; border-color: #dfbfda; }
+:root[data-game="loto"] :is(.metrics .metric-dark, .probability-card) {
+  background: var(--loto-dark);
+  border-color: var(--loto-dark);
+  color: #fff4fd;
+}
+:root[data-game="loto"] :is(.metric-dark > span, .metric-dark small) { color: #f1cdea !important; }
+:root[data-game="loto"] :is(.metric-dark strong, .probability-card h2, .probability-card h3) { color: #fff4fd; }
+:root[data-game="loto"] :is(.probability-card p, .probability-card .eyebrow) { color: #f1cdea; }
+:root[data-game="loto"] .probability-card .divider { background: #8a3c81; }
+:root[data-game="loto"] .number-cell {
+  background: color-mix(in srgb, #cc9cc7 calc(var(--heat)*100%), #fffafe);
+  color: #4d1748;
+  border-color: #e3c9de;
+}
+:root[data-game="loto"] .number-cell span { color: #5e2756; }
+:root[data-game="loto"] .legend i { background: #f0ddec; }
+:root[data-game="loto"] .legend i:nth-of-type(2) { background: #d3a6cd; }
+:root[data-game="loto"] .legend i:nth-of-type(3) { background: #af64a5; }
+:root[data-game="loto"] .bar-row > div { background: #f8edf5; }
+:root[data-game="loto"] :is(.bar-row i, .sum-chart i) { background: #bd80b4; }
+:root[data-game="loto"] .balls span { background: #f2dfed; color: #740a69; border-color: #dfbdd7; }
+:root[data-game="loto"] .balls.placeholder span { background: #faf3f8; color: #a98fa2; }
+:root[data-game="loto"] th { background: #faf1f7; color: #74536a; }
+:root[data-game="loto"] .divider { background: var(--loto-border); }
+:root[data-game="loto"] .upload { border-color: #d4aecb; }
+:root[data-game="loto"] .brand:hover { color: var(--loto-primary); }
+
